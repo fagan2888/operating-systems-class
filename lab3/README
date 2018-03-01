@@ -1,0 +1,8 @@
+Jeffrey Everett
+CSCI 3753
+Spring 2017
+Lab 3
+
+How to build program: simply run "make".
+How to run program: implemented as specified, so for example:
+./multi-lookup names1.txt names2.txt names3.txt names4.txt names5.txt results.txt

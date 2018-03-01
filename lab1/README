@@ -1,0 +1,14 @@
+Jeffrey Everett
+jeffrey.everett@colorado.edu
+
+Overview of files:
+simple_add.c - Contains the C code for the system call.
+Makefile - Contains build process information. Modifications to this file are what allowed the system call code to be included in the kernel.
+syscall_64.tbl - Registers the system calls within the kernel. The system call numbers I used were 326 for helloworld and 327 for simple_add.
+syscalls.h - Contains prototypes for system calls.
+syslog - System log file. Recent entries include the output of printk statements within the system calls which I added.
+test.c - Source code for my test program. This first calls helloworld and then simple_add using the hard-coded entries 3 and 4.
+
+Instructions for Building and Running Test Program:
+gcc test.c -o test
+./test

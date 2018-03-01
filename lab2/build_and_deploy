@@ -1,0 +1,9 @@
+#!/bin/sh
+
+sudo rm /dev/simple_character_file
+sudo mknod -m 777 /dev/simple_character_file c 240 0
+
+make -C/lib/modules/$(uname -r)/build M=$PWD modules
+
+sudo rmmod simple_char_driver
+sudo insmod simple_char_driver.ko

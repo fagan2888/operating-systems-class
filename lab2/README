@@ -1,0 +1,12 @@
+Jeffrey Everett
+jeffrey.everett@colorado.edu
+
+Overview of files:
+simple_char_driver.c - Contains the C code for the character device driver.
+Makefile - Contains build process information for the device driver.
+build_and_deploy - Automatically builds and installs module and adds device file.
+test.c - Userspace program to test device driver.
+
+Instructions for building and running test program:
+1.) First, you need to ensure the LKM is properly set up. Make build_and_deploy executable and then execute it with root privileges.
+2.) Then, compile userspace test program with "gcc test.c -o test" and then run it with "./test /dev/simple_character_file".

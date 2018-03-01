@@ -1,0 +1,11 @@
+Jeffrey Everett
+CSCI 3753
+Spring 2017
+Lab 5
+
+Build code using:
+make pa5-endfs
+
+Run code using:
+fusermount -u <mount-point>
+./fusexmp <key> <mirror-dir> <mount-point>
